@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/8b94e3e8c8cc358f0a83f-4b5786909e61937a62.jpg https://graph.org/file/69cc4a7f39edc00d3e3fc-ccf6802e7196bbae73.jpg https://graph.org/file/01e2c1270b4212616e7ee-cd14e6b709b7e48211.jpg https://graph.org/file/5dfe0394d86acbdc55d79-b6960dbbd28d7833a1.jpg https://graph.org/file/f1c7fd1e3d141c1124b37-23a1eb1b5183e636e5.jpg https://graph.org/file/f100b17824e55252bf98b-3d027f7d1995e8dd15.jpg https://graph.org/file/f21e2111ae3fc029dc042-fbac0bd8810f1941ba.jpg https://graph.org/file/8e936190cf94e2a956584-6e9eeaf8f73a79bf8e.jpg https://graph.org/file/cb657ad7c88dc941e38fa-5775b61d201dfb20e1.jpg https://graph.org/file/80065f6bc734e5bc4e02b-299776f28732501abd.jpg https://graph.org/file/8d5dc43f2c9cafcc5cfb7-82e89b6849bdbd9288.jpg https://graph.org/file/dc52353057e5302364c06-0d21b8ac0d0f9aecf2.jpg https://graph.org/file/e459a3edecd2a74956c86-cf3014b7edc55a2417.jpg https://graph.org/file/49a630f7733466a8ec953-14428eaa959f0877a5.jpg https://graph.org/file/b53218bd506b6295d9b9a-cfb04f8c9337dd3980.jpg https://graph.org/file/a782efb6d69534d69036b-86802434f050ae9c85.jpg https://graph.org/file/1f026955baa41a6fe9e29-a309bc8dc161f1aa39.jpg https://graph.org/file/4ff5527688d990aac645e-61c3239bee96ef61a1.jpg https://graph.org/file/27234666f7c806c9473c5-0c34d8daf3838eb473.jpg https://graph.org/file/2f59d3ac52996bc89724b-f8e661479bc69253ad.jpg https://graph.org/file/2a71dd781481d06718da2-964c874162d83d6ebb.jpg https://graph.org/file/b1bcd7c03490e9eee4a74-0bc871f7d16e1ae778.jpg https://graph.org/file/8902f76f07f6ae890771b-fddf27adab9bbf9cea.jpg https://graph.org/file/8c7ecc0f0af033b1d134d-80cac6f0c418d475d0.jpg')).split()
 
 
 # Admins & Users
@@ -77,21 +77,21 @@ PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) #
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month') # time in week, day, month.
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/ce1723991756e48c35aa1.jpg') # payment code picture url.
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/37f4a357e918cd0865adc-237d6b104558320bf7.jpg') # payment code picture url.
 PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- 30ʀs - 1 ᴡᴇᴇᴋ\n- 50ʀs - 1 ᴍᴏɴᴛʜs\n- 120ʀs - 3 ᴍᴏɴᴛʜs\n- 220ʀs - 6 ᴍᴏɴᴛʜs\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>demo@okxyz</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ</b>')
 
 
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
-CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
+CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
 CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "") # Necessary If clone mode is true
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Requestyourmovie243')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_botz')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/kingvj01')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Requestyourmovie243') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Indar_off')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
