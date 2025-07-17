@@ -11,25 +11,25 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '6674102'))
+API_HASH = environ.get('API_HASH', '1ca8fedb9d767db9f162054fc42bc4b4')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7647981293:AAEJfc81eJtHSlvSVGEmTg9ocpu6kygDNl8")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/8b94e3e8c8cc358f0a83f-4b5786909e61937a62.jpg https://graph.org/file/69cc4a7f39edc00d3e3fc-ccf6802e7196bbae73.jpg https://graph.org/file/01e2c1270b4212616e7ee-cd14e6b709b7e48211.jpg https://graph.org/file/5dfe0394d86acbdc55d79-b6960dbbd28d7833a1.jpg https://graph.org/file/f1c7fd1e3d141c1124b37-23a1eb1b5183e636e5.jpg https://graph.org/file/f100b17824e55252bf98b-3d027f7d1995e8dd15.jpg https://graph.org/file/f21e2111ae3fc029dc042-fbac0bd8810f1941ba.jpg https://graph.org/file/8e936190cf94e2a956584-6e9eeaf8f73a79bf8e.jpg https://graph.org/file/cb657ad7c88dc941e38fa-5775b61d201dfb20e1.jpg https://graph.org/file/80065f6bc734e5bc4e02b-299776f28732501abd.jpg https://graph.org/file/8d5dc43f2c9cafcc5cfb7-82e89b6849bdbd9288.jpg https://graph.org/file/dc52353057e5302364c06-0d21b8ac0d0f9aecf2.jpg https://graph.org/file/e459a3edecd2a74956c86-cf3014b7edc55a2417.jpg https://graph.org/file/49a630f7733466a8ec953-14428eaa959f0877a5.jpg https://graph.org/file/b53218bd506b6295d9b9a-cfb04f8c9337dd3980.jpg https://graph.org/file/a782efb6d69534d69036b-86802434f050ae9c85.jpg https://graph.org/file/1f026955baa41a6fe9e29-a309bc8dc161f1aa39.jpg https://graph.org/file/4ff5527688d990aac645e-61c3239bee96ef61a1.jpg https://graph.org/file/27234666f7c806c9473c5-0c34d8daf3838eb473.jpg https://graph.org/file/2f59d3ac52996bc89724b-f8e661479bc69253ad.jpg https://graph.org/file/2a71dd781481d06718da2-964c874162d83d6ebb.jpg https://graph.org/file/b1bcd7c03490e9eee4a74-0bc871f7d16e1ae778.jpg https://graph.org/file/8902f76f07f6ae890771b-fddf27adab9bbf9cea.jpg https://graph.org/file/8c7ecc0f0af033b1d134d-80cac6f0c418d475d0.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/ifA.jpg https://envs.sh/if_.jpg https://envs.sh/ifj.jpg https://envs.sh/b25.jpg https://envs.sh/b2G.jpg https://envs.sh/b2z.jpg https://envs.sh/b2K.jpg https://envs.sh/b23.jpg https://envs.sh/b2C.jpg https://files.catbox.moe/iida7a.jpg https://files.catbox.moe/05v2s6.mp4 https://files.catbox.moe/095ie9.mp4 https://files.catbox.moe/jzz1os.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1324630114').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1324630114').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002379822951'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002546287361'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002756427466').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -37,11 +37,11 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set Tr
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
-auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002682128156') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
-reqst_channel = environ.get('REQST_CHANNEL', '-1002379822951')
+reqst_channel = environ.get('REQST_CHANNEL', '-1002756427466')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Channel Is For Index Request 
@@ -55,11 +55,11 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002379822951')).split()]  # For Multiple Id Use One Space Between Each.
 
 # This Channel Is For Delete Index File, Forward Your File In This Channel Which You Want To Delete Then Bot Automatically Delete That File From Database.
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]  # For Multiple Id Use One Space Between Each.
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002848411735').split()]  # For Multiple Id Use One Space Between Each.
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Alx:alx@alx.mb6lhct.mongodb.net/?retryWrites=true&w=majority&appName=Alx")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sreeharipradeep38:Fxfkkqb1deS33vDA@cluster0.uei2df5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "alx")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -88,9 +88,9 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '-1002529900646') # Pub
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Requestyourmovie243')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TheMvieHub1234')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Requestyourmovie243') # Support Chat Link Without https:// or @
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+WLpFwcXq9C42MzI9')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+-mQfm_FEeHphOWE9')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+edeI12_qBfE2YTg1') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Indar_off')
 
 # True Or False
